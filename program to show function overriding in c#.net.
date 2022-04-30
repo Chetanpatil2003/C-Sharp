@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication8
+{
+publicclassProgram
+    {
+	publicvirtualvoid showinfo()
+	  {
+		Console.WriteLine("base class method");
+	  }
+    }
+classb:Program
+    {
+	publicoverridevoid showinfo()
+	  {
+		Console.WriteLine("derived class method");
+	  }
+publicstaticvoid Main()
+        {
+			b b1=newb();
+			b1.showinfo();
+			b1.showinfo();
+
+        }
+
+    } Console.ReadLine();
+}
